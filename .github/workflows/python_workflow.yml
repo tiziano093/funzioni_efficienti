@@ -24,6 +24,9 @@ jobs:
     - name: Run script and capture output
       run: |
         python python.py > output.log 2>&1
+    
+    - name: Print output log
+      run: cat output.log
 
     - name: Upload output log
       uses: actions/upload-artifact@v2
