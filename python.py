@@ -41,7 +41,7 @@ def test_functions():
 
     profile_function(find_max, lst)
 
-    profile_function(filter_evens_efficient, lst)
+    profile_function(filter_evens, lst)
 
 if __name__ == "__main__":
     test_functions()
