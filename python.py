@@ -22,7 +22,6 @@ def profile_function(func, *args):
     p = psutil.Process()
     p.cpu_percent(interval=None)      
     mem_usage = memory_usage((func, args), max_usage=True)
-    result = func(*args)
     cpu_percent = p.cpu_percent(interval=None)
     
     print(f"Codice {func.__name__}:")
