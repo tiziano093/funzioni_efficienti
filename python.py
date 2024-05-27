@@ -2,9 +2,6 @@ import psutil
 from memory_profiler import memory_usage
 import numpy as np 
 
-
-# Definizione di funzioni specifiche per operazioni comuni su liste e numeri.
-
 def sum_list(lst):
     # Calcola la somma degli elementi di una lista usando NumPy, che è più veloce per grandi quantità di dati.
     return np.sum(lst)
@@ -24,8 +21,6 @@ def find_max(lst):
 def filter_evens(lst):
     # Restituisce una lista contenente solo i numeri pari dalla lista originale.
     return [num for num in lst if num % 2 == 0]
-
-# Funzioni aggiuntive per manipolare liste e stringhe.
 
 def sum_of_squares(lst):
     # Calcola la somma dei quadrati di ogni elemento in una lista.
